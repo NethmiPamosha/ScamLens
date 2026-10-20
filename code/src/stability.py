@@ -106,21 +106,25 @@ def generate_variants(text, n_per_type=3, seed=42):
 
 
 def check_stability(model, text, n_per_type=3, seed=42):
-    """Return a summary dict plus the per-variant results."""
-    base_p = float(model.predict_proba([text])[0, 1])
+    """Return a summary dict plus the per-variant results.
+
+    Uses the final calibrated scam risk score, the same number the user sees.
+    A "flip" means the variant lands on the other side of 0.5.
+    """
+    base_p = float(model.scam_risk([text])[0])
     base_label = int(base_p >= 0.5)
     variants = generate_variants(text, n_per_type, seed)
     if not variants:
         return {"score": 100.0, "verdict": "Stable", "base_p": base_p,
                 "flip_rate": 0.0, "mean_shift": 0.0, "max_shift": 0.0, "rows": []}
 
-    probs = model.predict_proba([v for _, v in variants])[:, 1]
+    probs = model.scam_risk([v for _, v in variants])
     rows = []
     for (kind, v), p in zip(variants, probs):
         rows.append({
             "perturbation": kind,
             "variant": v,
-            "scam_probability": round(float(p), 4),
+            "risk_score": round(float(p), 4),
             "shift": round(float(p - base_p), 4),
             "label_flipped": int(p >= 0.5) != base_label,
         })
