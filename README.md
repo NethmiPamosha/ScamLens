@@ -208,7 +208,7 @@ The dashboard has a sidebar with eight pages:
 | **Settings** | Turn LIME and technical details on or off. |
 
    ### Home
-   ![Home page](assests/HomePage.png)
+   ![Home page](assets/HomePage.png)
 
    ### Scam detected, with reasons and advice
    ![Scam result](assets/DetectedScam.png)
@@ -217,7 +217,7 @@ The dashboard has a sidebar with eight pages:
    ![What-If Lab](assets/What-ifLabPage.png)
 
    ### Stability Check
-   ![Stability Check](assets/STabilityCheckPage.png)
+   ![Stability Check](assets/StabilityCheckPage.png)
 
    ### Model Insights
    ![Model Insights](assets/ModelInsightPage.png)
