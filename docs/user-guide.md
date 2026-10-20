@@ -8,12 +8,16 @@ ScamLens checks a text message and tells you three things: **is it a scam, why, 
 2. On **Home**, paste a message into the box, or click an example button.
 3. Click **Analyze Message**.
 
+   ![Scam result](assets/DetectedScam.png)
+
 ## Pages
 
 ### Home
 
 * Paste an SMS or email text and click **Analyze Message**.
 * Example buttons fill the box with ready-made messages: Bank threat, Prize scam, Courier scam, Shop promotion and Normal message.
+  
+   ![Home page](assets/HomePage.png)
 
 ### Analyze Message
 
@@ -46,6 +50,8 @@ Edit the analyzed message and click **Compare**. You see the original and modifi
 
 Below that, **Which single word matters most?** removes each word one at a time and shows how the risk changes.
 
+   ![What-If Lab](assets/What-ifLabPage.png)
+
 ### Stability Check
 
 ScamLens makes small changes to the message that keep its meaning (leetspeak, swapped or missing letters, dotted words, casing, punctuation, synonyms) and re-scores each one.
@@ -54,6 +60,8 @@ ScamLens makes small changes to the message that keep its meaning (leetspeak, sw
 * **Verdict:** Stable (80 or more), Somewhat fragile (55 to 80) or Fragile (under 55).
 * **Label flips:** the share of variants that crossed the 50% line.
 * **Red dots** on the chart are variants that fooled the model.
+
+   ![Stability Check](assets/StabilityCheckPage.png)
 
 ### History
 
@@ -66,6 +74,8 @@ Cards describing six common scam types, and the five manipulation tactics ScamLe
 ### Model Insights
 
 Dataset size, per-class results, confusion matrix, the calibration comparison, learned weights of the risk combiner, tactic validation, the most important words, and the limitations.
+
+   ![Model Insights](assets/ModelInsightPage.png)
 
 ### Settings
 
