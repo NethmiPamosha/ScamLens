@@ -169,7 +169,7 @@ The dashboard is organized into four main areas:
 
 This repository has a separate, detailed README inside the `scamlens/` project folder. Environment setup, dependency installation, model training, tests, and dashboard launch commands are documented there.
 
-👉 **[Open the detailed setup and usage guide](scamlens/code/README.md)**
+👉 **[Open the detailed setup and usage guide](code/README.md)**
 
 ---
 
