@@ -2,7 +2,7 @@
 
 <img src="assets/logo.jpeg" alt="Team VectorX logo" width="180"/>
 
-# 🔍 ScamLens
+# ScamLens
 
 ### *Explain the Scam, Not Just the Spam.*
 
@@ -65,15 +65,15 @@ ScamLens combines a machine-learning classifier with explanation tools in one in
 
 ## 🚀 Key Features
 
-| | Feature | Description |
-|:-:|---|---|
-| 📨 | **Suspicious-message classification** | Predicts whether a message resembles a scam/spam message or a legitimate one. |
-| 🔤 | **Word-level explainability** | Highlights the words that contribute to the model's prediction. |
-| 🎭 | **Manipulation-tactic detection** | Flags patterns linked to *urgency*, *fear or threats*, *authority*, *rewards or greed*, and *calls to action*. |
-| 🔀 | **What-if analysis** | Edit the message text and compare how the prediction and detected tactics change. |
-| 🧪 | **Prediction-stability testing** | Checks how typos or obfuscated wording can affect the model's output. |
-| 📊 | **Overall risk estimate** | Combines the classifier's probability with detected tactic patterns into an extra risk indicator. |
-| 📈 | **Model insights** | Shows evaluation metrics, a confusion matrix, and influential model features. |
+| Feature | Description |
+|---|---|
+| **Suspicious-message classification** | Predicts whether a message resembles a scam/spam message or a legitimate one. |
+| **Word-level explainability** | Highlights the words that contribute to the model's prediction. |
+| **Manipulation-tactic detection** | Flags patterns linked to *urgency*, *fear or threats*, *authority*, *rewards or greed*, and *calls to action*. |
+| **What-if analysis** | Edit the message text and compare how the prediction and detected tactics change. |
+| **Prediction-stability testing** | Checks how typos or obfuscated wording can affect the model's output. |
+| **Overall risk estimate** | Combines the classifier's probability with detected tactic patterns into an extra risk indicator. |
+| **Model insights** | Shows evaluation metrics, a confusion matrix, and influential model features. |
 
 ---
 
@@ -81,19 +81,19 @@ ScamLens combines a machine-learning classifier with explanation tools in one in
 
 | Component | Technology |
 |---|---|
-| 🐍 Programming language | Python |
-| 🔢 Text representation & classification | TF-IDF and Logistic Regression |
-| 🔎 Explainability | Linear feature contributions and optional LIME |
-| 🎭 Manipulation-tactic analysis | Rule-based pattern matching |
-| 🖥️ Interactive dashboard | Streamlit |
-| 📉 Charts & visual analysis | Plotly |
-| ✅ Testing | pytest |
-| ⚙️ Data processing & model utilities | Python machine-learning and data-processing libraries |
+| Programming language | Python |
+| Text representation & classification | TF-IDF and Logistic Regression |
+| Explainability | Linear feature contributions and optional LIME |
+| Manipulation-tactic analysis | Rule-based pattern matching |
+| Interactive dashboard | Streamlit |
+| Charts & visual analysis | Plotly |
+| Testing | pytest |
+| Data processing & model utilities | Python machine-learning and data-processing libraries |
 
 ---
 
 ## 🔬 Methodology
-
+1. **Text preprocessing** — normalize message text and handle common patterns such as links, numbers, and monetary values.
 2. **Feature extraction** — represent text using TF-IDF features, including single words and two-word phrases.
 3. **Model training** — train a class-balanced Logistic Regression classifier to separate scam/spam-like messages from legitimate ones.
 4. **Local explanation** — calculate the contribution of text features to a prediction, and optionally generate a LIME explanation.
@@ -142,11 +142,11 @@ Evaluated on a **stratified 80/20 train-test split** of **5,171 unique messages*
 
 | Metric | Result |
 |---|:-:|
-| 🎯 Accuracy | **0.990** |
-| 🔹 Precision | **0.969** |
-| 🔹 Recall | **0.954** |
-| ⚖️ F1 score | **0.962** |
-| 📈 ROC AUC | **0.997** |
+| Accuracy | **0.990** |
+| Precision | **0.969** |
+| Recall | **0.954** |
+| F1 score | **0.962** |
+| ROC AUC | **0.997** |
 
 > 📝 These results apply to the project's test split and dataset. Because the dataset is not a comprehensive collection of real-world scams, the metrics may not reflect performance on phishing, targeted fraud, multilingual messages, or newly emerging scam techniques.
 
@@ -158,10 +158,10 @@ The dashboard is organized into four main areas:
 
 | Tab | What you can do |
 |---|---|
-| 🔍 **Analyze** | View the message prediction, highlighted words, detected tactics, and safety guidance. |
-| 🔀 **What-If** | Edit a message and compare the resulting predictions. |
-| 🧪 **Stability** | Inspect whether small or deliberate text changes affect the classification. |
-| 📈 **Model Insights** | Review evaluation metrics, a confusion matrix, and influential model features. |
+| **Analyze** | View the message prediction, highlighted words, detected tactics, and safety guidance. |
+| **What-If** | Edit a message and compare the resulting predictions. |
+| **Stability** | Inspect whether small or deliberate text changes affect the classification. |
+| **Model Insights** | Review evaluation metrics, a confusion matrix, and influential model features. |
 
 <!-- Add dashboard screenshots here, e.g. ![Analyze tab](assets/analyze.png) -->
 
@@ -175,12 +175,12 @@ This repository has a separate, detailed README inside the `scamlens/` project f
 
 ## ⚠️ Limitations
 
-- 🌐 The model is trained on an English SMS dataset and may perform less reliably on emails, newer scam formats, or other languages.
-- 🗃️ The dataset contains spam examples and does not represent all categories of scams or phishing.
-- 🎭 Rule-based tactic detection can miss indirect or creative wording, and may flag harmless messages that use similar language.
-- 🥸 Text obfuscation, unusual spelling, and adversarial edits may change the model's prediction.
-- 🚨 A detected tactic or high risk estimate is a warning signal, not proof of fraud. A low estimate does not guarantee safety.
-- 🔗 The system analyzes message text only. It does not independently verify URLs, sender identity, or the legitimacy of an organization.
+- The model is trained on an English SMS dataset and may perform less reliably on emails, newer scam formats, or other languages.
+- The dataset contains spam examples and does not represent all categories of scams or phishing.
+- Rule-based tactic detection can miss indirect or creative wording, and may flag harmless messages that use similar language.
+- Text obfuscation, unusual spelling, and adversarial edits may change the model's prediction.
+- A detected tactic or high risk estimate is a warning signal, not proof of fraud. A low estimate does not guarantee safety.
+- The system analyzes message text only. It does not independently verify URLs, sender identity, or the legitimacy of an organization.
 
 ## 🔭 Future Scope
 
