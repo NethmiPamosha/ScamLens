@@ -67,7 +67,7 @@ The combiner is a logistic regression over 7 inputs: the text model's scam and s
 ## Project structure
 
 ```
-scamlens/
+code/
   app.py                    Streamlit dashboard
   requirements.txt
   .streamlit/config.toml    theme
