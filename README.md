@@ -207,7 +207,22 @@ The dashboard has a sidebar with eight pages:
 | **Model Insights** | Review metrics, calibration, tactic validation and limitations. |
 | **Settings** | Turn LIME and technical details on or off. |
 
-<!-- Add dashboard screenshots here, e.g. ![Analyze page](assets/analyze.png) -->
+   ### Home
+   ![Home page](assests/HomePage.png)
+
+   ### Scam detected, with reasons and advice
+   ![Scam result](assets/DetectedScam.png)
+
+   ### What-If Lab
+   ![What-If Lab](assets/What-ifLabPage.png)
+
+   ### Stability Check
+   ![Stability Check](assets/STabilityCheckPage.png)
+
+   ### Model Insights
+   ![Model Insights](assets/ModelInsightPage.png)
+
+
 
 ## ⚙️ Installation and Usage
 
