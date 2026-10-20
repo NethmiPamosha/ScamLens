@@ -22,7 +22,7 @@ Test set results on the SMS Spam Collection (5,171 unique messages, 80/20 strati
 ## Project structure
 
 ```
-scamlens/
+code/
   app.py                 Streamlit dashboard
   requirements.txt
   data/sms.tsv           dataset (label TAB message)
