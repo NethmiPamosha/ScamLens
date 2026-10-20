@@ -20,7 +20,7 @@ An **Explainable AI (XAI)** system that shows people *why* a message looks suspi
 ![Challenge](https://img.shields.io/badge/Challenge-05-8A2BE2?style=flat-square)
 ![Team](https://img.shields.io/badge/Team-VectorX-1E90FF?style=flat-square)
 
-### 🚀 [Live Demo](LIVE_DEMO_LINK)
+### 🚀 [Live Demo](https://scamlens-vectorx.streamlit.app/)
 
 [Overview](#-overview) • [Features](#-key-features) • [Tech Stack](#-technology-stack) • [How It Works](#-methodology) • [Results](#-results) • [Setup](#-installation-and-usage) • [Limitations](#-limitations) • [Roadmap](#-future-scope)
 
@@ -192,7 +192,7 @@ How often each rule fires in each class, across the whole dataset:
 
 ## 🖼️ Screenshots / Demo
 
-🚀 **Try it live:** [LIVE_DEMO_LINK](LIVE_DEMO_LINK)
+🚀 **Try it live:** [LIVE_DEMO_LINK](https://scamlens-vectorx.streamlit.app/)
 
 The dashboard has a sidebar with eight pages:
 
