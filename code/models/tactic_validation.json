@@ -1,0 +1,32 @@
+{
+  "Urgency": {
+    "Legitimate": 0.0126,
+    "Spam": 0.1333,
+    "Scam": 0.3409
+  },
+  "Fear / Threat": {
+    "Legitimate": 0.0134,
+    "Spam": 0.0023,
+    "Scam": 0.0246
+  },
+  "Authority Impersonation": {
+    "Legitimate": 0.0064,
+    "Spam": 0.023,
+    "Scam": 0.0398
+  },
+  "Reward / Greed": {
+    "Legitimate": 0.0176,
+    "Spam": 0.3103,
+    "Scam": 0.4697
+  },
+  "Suspicious Call to Action": {
+    "Legitimate": 0.0021,
+    "Spam": 0.446,
+    "Scam": 0.6742
+  },
+  "Any tactic": {
+    "Legitimate": 0.049,
+    "Spam": 0.6736,
+    "Scam": 0.8636
+  }
+}

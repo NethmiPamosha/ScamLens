@@ -1,0 +1,90 @@
+{
+  "text_model_only": {
+    "mean_predicted": [
+      0.0009,
+      0.0018,
+      0.0026,
+      0.0038,
+      0.0051,
+      0.0067,
+      0.0095,
+      0.0158,
+      0.0492,
+      0.8805
+    ],
+    "actual_scam_rate": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0086,
+      0.0431,
+      0.8621
+    ]
+  },
+  "old_heuristic_formula": {
+    "mean_predicted": [
+      0.0009,
+      0.0018,
+      0.0028,
+      0.004,
+      0.0055,
+      0.0077,
+      0.012,
+      0.0283,
+      0.1835,
+      0.9003
+    ],
+    "actual_scam_rate": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0431,
+      0.8707
+    ]
+  },
+  "calibrated_risk_score": {
+    "mean_predicted": [
+      0.0,
+      0.0,
+      0.0,
+      0.0001,
+      0.0001,
+      0.0002,
+      0.0004,
+      0.001,
+      0.0506,
+      0.8697
+    ],
+    "actual_scam_rate": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0431,
+      0.8707
+    ]
+  },
+  "combiner_weights": {
+    "AI model: scam score": 1.269,
+    "AI model: spam score": 0.56,
+    "Tactic: Urgency": 0.291,
+    "Tactic: Fear / Threat": 0.543,
+    "Tactic: Authority Impersonation": 0.801,
+    "Tactic: Reward / Greed": 0.254,
+    "Tactic: Suspicious Call to Action": 0.408
+  },
+  "combiner_intercept": -0.023
+}
